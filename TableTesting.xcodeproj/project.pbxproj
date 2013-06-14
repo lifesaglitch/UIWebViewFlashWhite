@@ -18,6 +18,9 @@
 		BFBE96C8176A01F200F368BD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFBE96C7176A01F200F368BD /* Default-568h@2x.png */; };
 		BFBE96CB176A01F200F368BD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBE96C9176A01F200F368BD /* MainStoryboard.storyboard */; };
 		BFBE96CE176A01F200F368BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBE96CD176A01F200F368BD /* ViewController.m */; };
+		BFBE96D6176A020A00F368BD /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBE96D5176A020A00F368BD /* SecondViewController.m */; };
+		BFBE96D9176A029E00F368BD /* HeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBE96D8176A029E00F368BD /* HeaderCell.m */; };
+		BFBE96DC176A02A500F368BD /* ContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBE96DB176A02A500F368BD /* ContentCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,12 @@
 		BFBE96CA176A01F200F368BD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		BFBE96CC176A01F200F368BD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BFBE96CD176A01F200F368BD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BFBE96D4176A020A00F368BD /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		BFBE96D5176A020A00F368BD /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		BFBE96D7176A029E00F368BD /* HeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderCell.h; sourceTree = "<group>"; };
+		BFBE96D8176A029E00F368BD /* HeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderCell.m; sourceTree = "<group>"; };
+		BFBE96DA176A02A500F368BD /* ContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentCell.h; sourceTree = "<group>"; };
+		BFBE96DB176A02A500F368BD /* ContentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +95,14 @@
 				BFBE96C0176A01F200F368BD /* AppDelegate.h */,
 				BFBE96C1176A01F200F368BD /* AppDelegate.m */,
 				BFBE96C9176A01F200F368BD /* MainStoryboard.storyboard */,
+				BFBE96D7176A029E00F368BD /* HeaderCell.h */,
+				BFBE96D8176A029E00F368BD /* HeaderCell.m */,
+				BFBE96DA176A02A500F368BD /* ContentCell.h */,
+				BFBE96DB176A02A500F368BD /* ContentCell.m */,
 				BFBE96CC176A01F200F368BD /* ViewController.h */,
 				BFBE96CD176A01F200F368BD /* ViewController.m */,
+				BFBE96D4176A020A00F368BD /* SecondViewController.h */,
+				BFBE96D5176A020A00F368BD /* SecondViewController.m */,
 				BFBE96B8176A01F200F368BD /* Supporting Files */,
 			);
 			path = TableTesting;
@@ -176,6 +191,9 @@
 				BFBE96BE176A01F200F368BD /* main.m in Sources */,
 				BFBE96C2176A01F200F368BD /* AppDelegate.m in Sources */,
 				BFBE96CE176A01F200F368BD /* ViewController.m in Sources */,
+				BFBE96D6176A020A00F368BD /* SecondViewController.m in Sources */,
+				BFBE96D9176A029E00F368BD /* HeaderCell.m in Sources */,
+				BFBE96DC176A02A500F368BD /* ContentCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
