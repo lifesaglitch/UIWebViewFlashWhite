@@ -17,12 +17,20 @@
     if (self) {
         
         self.backgroundColor = [UIColor clearColor];
-        
         self.contentView.backgroundColor = [UIColor clearColor];
+        self.placeholder.hidden = NO;
         
     }
     
     return self;
+}
+
+
+- (void)prepareForReuse
+{
+    self.backgroundColor = [UIColor clearColor];
+    self.contentView.backgroundColor = [UIColor clearColor];
+    self.placeholder.hidden = NO;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

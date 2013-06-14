@@ -10,5 +10,6 @@
 
 @interface ContentCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIWebView *contentView;
+@property (weak, nonatomic) IBOutlet UIView *placeholder;
 
 @end

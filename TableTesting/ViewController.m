@@ -63,9 +63,23 @@
     }
     else
     {
-        return 225;
+        return 300;
     }
 }
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    
+    NSLog(@"webview did load call");
+    
+    ContentCell *cell = (ContentCell *)[self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:_expandedSection]];
+    cell.contentView.backgroundColor = [UIColor yellowColor];
+
+//    [cell bringSubviewToFront:cell.contentView];
+    
+    cell.placeholder.hidden = YES;
+    
+}
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -74,7 +88,7 @@
     if ( indexPath.row == 0 )
     {
         HeaderCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HeaderCell"];
-        
+        cell.textLabel.textColor = [UIColor whiteColor];
         cell.textLabel.text = self.data[indexPath.section][@"title"];
         
         
@@ -83,9 +97,7 @@
     else
     {
         ContentCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ContentCell"];
-        [cell.contentView loadHTMLString:@"<html><body style='background-color: #ff0000'>this is contentasdoifjoiwjeofiqjweoifjqopweifj </body></html>" baseURL:nil];
-        
-        
+        [cell.contentView loadHTMLString:@"<html><body style='background-color: #000000;color:white'><p>this is</p> contentasdoifjoiwjeofiqjweoifjqopweifj </body></html>" baseURL:nil];
         
         //set the back ground color in cell?
         //        cell.contentWebView.text = @"this is the content";
